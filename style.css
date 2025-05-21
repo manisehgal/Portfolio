@@ -34,7 +34,7 @@ nav {
 
 .hero {
   background-image: url("377CB2C1-41E8-41D1-A3B7-B2945D34F651.jpeg");
-  background-size:cover;
+  background-size: 100% 100%;
   text-align: center;
   padding: 4rem 2rem;
   color: white;
