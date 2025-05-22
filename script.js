@@ -1,4 +1,10 @@
 // Optional: Lightbox effect for photo gallery
+window.addEventListener('load', function () {
+  if (window.location.hash) {
+    history.replaceState(null, null, window.location.pathname);
+    window.scrollTo(0, 0);
+  }
+});
 document.addEventListener("DOMContentLoaded", () => {
   const galleryLinks = document.querySelectorAll(".gallery-grid a");
 
