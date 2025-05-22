@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+:root {
+  scroll-padding-top: 80px; /* Adjust to match your header height */
+}
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
