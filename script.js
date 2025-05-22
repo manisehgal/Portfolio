@@ -1,8 +1,10 @@
+// Optional: Lightbox effect for photo gallery
 document.addEventListener("DOMContentLoaded", () => {
-  const galleryLinks = document.querySelectorAll(".photos .gallery-grid a");
+  const galleryLinks = document.querySelectorAll(".gallery-grid a");
 
   galleryLinks.forEach(link => {
     link.addEventListener("click", (e) => {
+      if (!link.href.endsWith('.jpg')) return; // Prevent lightbox for non-images
       e.preventDefault();
 
       const overlay = document.createElement("div");
