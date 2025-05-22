@@ -76,6 +76,7 @@ section {
 }
 
 .about p {
+   text-align: center;
   max-width: 700px;
   margin: auto;
   font-size: 1.1em;
