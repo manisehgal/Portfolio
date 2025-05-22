@@ -1,31 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<script src="script.js"></script>
 <body>
-  <header class="cover-photo">
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="cover-photo">
     <div class="cover-text">
       <h1>Welcome to My Portfolio</h1>
       <p>Creative | Professional | Unique</p>
     </div>
-  </header>
+  </section>
 
-  <section class="about">
+  <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      I am a passionate and dedicated designer with a strong background in branding, web design, and visual storytelling. With a keen eye for detail and a commitment to delivering quality work, I strive to create memorable digital experiences that leave a lasting impression. My approach blends creativity with strategy to bring your ideas to life with precision and flair.
+      I am a passionate and dedicated designer with a strong background in branding, web design, and visual storytelling.
+      With a keen eye for detail and a commitment to delivering quality work, I strive to create memorable digital experiences 
+      that leave a lasting impression. My approach blends creativity with strategy to bring your ideas to life with precision and flair.
     </p>
   </section>
 
-  <section class="gallery logos">
+  <section id="gallery" class="gallery">
     <h2>Logo Gallery</h2>
     <div class="gallery-grid">
-      <!-- Replace with your logo image paths -->
       <img src="logos/logo1.png" alt="Logo 1">
       <img src="logos/logo2.png" alt="Logo 2">
       <img src="logos/logo3.png" alt="Logo 3">
@@ -37,12 +54,9 @@
       <img src="logos/logo9.png" alt="Logo 9">
       <img src="logos/logo10.png" alt="Logo 10">
     </div>
-  </section>
 
-  <section class="gallery photos">
     <h2>Photo Gallery</h2>
     <div class="gallery-grid">
-      <!-- Thumbnails that link to full-size images -->
       <a href="photos/photo1.jpg" target="_blank"><img src="photos/thumb1.jpg" alt="Photo 1"></a>
       <a href="photos/photo2.jpg" target="_blank"><img src="photos/thumb2.jpg" alt="Photo 2"></a>
       <a href="photos/photo3.jpg" target="_blank"><img src="photos/thumb3.jpg" alt="Photo 3"></a>
@@ -56,7 +70,7 @@
     </div>
   </section>
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <form action="mailto:your@email.com" method="post" enctype="text/plain">
       <input type="text" name="name" placeholder="Your Name" required />
@@ -65,5 +79,6 @@
       <button type="submit">Send Message</button>
     </form>
   </section>
+
 </body>
 </html>
