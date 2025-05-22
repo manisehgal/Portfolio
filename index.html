@@ -2,64 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <h1 class="logo">MyPortfolio</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <!--<img src="377CB2C1-41E8-41D1-A3B7-B2945D34F651.jpeg">-->
-      <h2>Hi, I'm Manish Sehgal</h2>
-      <p>Web Developer | Designer | Problem Solver</p>
+  <header class="cover-photo">
+    <div class="cover-text">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Creative | Professional | Unique</p>
     </div>
   </header>
 
-  <section id="about">
+  <section class="about">
     <h2>About Me</h2>
-    <p>Hi, I’m Manish Sehgal, a passionate graphic designer with a sharp eye for detail and a love for visual storytelling. <br>With 5 years of experience in branding, digital design, and print media, I help businesses and individuals bring their ideas to life through compelling, purpose-driven design.
-
-Whether I’m crafting a logo, building a visual identity, or designing marketing materials, my goal is always the same: to create thoughtful, visually striking work that communicates clearly and connects emotionally.
-
-When I’m not designing, you’ll usually find me sketching, exploring design trends, or getting inspired by art, photography, and everyday moments.<br>
-
-Let’s create something beautiful together.</p>
+    <p>
+      I am a passionate and dedicated designer with a strong background in branding, web design, and visual storytelling. With a keen eye for detail and a commitment to delivering quality work, I strive to create memorable digital experiences that leave a lasting impression. My approach blends creativity with strategy to bring your ideas to life with precision and flair.
+    </p>
   </section>
 
- <section id="gallery">
-  <h2>Photo Gallery</h2>
-  <div class="gallery-grid">
-    <img src="https://via.placeholder.com/300x200" alt="Photo 1">
-    <img src="https://via.placeholder.com/300x200" alt="Photo 2">
-    <img src="https://via.placeholder.com/300x200" alt="Photo 3">
-    <img src="https://via.placeholder.com/300x200" alt="Photo 4">
-    <img src="https://via.placeholder.com/300x200" alt="Photo 5">
-    <img src="https://via.placeholder.com/300x200" alt="Photo 6">
-  </div>
-</section>
+  <section class="gallery logos">
+    <h2>Logo Gallery</h2>
+    <div class="gallery-grid">
+      <!-- Replace with your logo image paths -->
+      <img src="logos/logo1.png" alt="Logo 1">
+      <img src="logos/logo2.png" alt="Logo 2">
+      <img src="logos/logo3.png" alt="Logo 3">
+      <img src="logos/logo4.png" alt="Logo 4">
+      <img src="logos/logo5.png" alt="Logo 5">
+      <img src="logos/logo6.png" alt="Logo 6">
+      <img src="logos/logo7.png" alt="Logo 7">
+      <img src="logos/logo8.png" alt="Logo 8">
+      <img src="logos/logo9.png" alt="Logo 9">
+      <img src="logos/logo10.png" alt="Logo 10">
+    </div>
+  </section>
 
-  <section id="contact">
+  <section class="gallery photos">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-grid">
+      <!-- Thumbnails that link to full-size images -->
+      <a href="photos/photo1.jpg" target="_blank"><img src="photos/thumb1.jpg" alt="Photo 1"></a>
+      <a href="photos/photo2.jpg" target="_blank"><img src="photos/thumb2.jpg" alt="Photo 2"></a>
+      <a href="photos/photo3.jpg" target="_blank"><img src="photos/thumb3.jpg" alt="Photo 3"></a>
+      <a href="photos/photo4.jpg" target="_blank"><img src="photos/thumb4.jpg" alt="Photo 4"></a>
+      <a href="photos/photo5.jpg" target="_blank"><img src="photos/thumb5.jpg" alt="Photo 5"></a>
+      <a href="photos/photo6.jpg" target="_blank"><img src="photos/thumb6.jpg" alt="Photo 6"></a>
+      <a href="photos/photo7.jpg" target="_blank"><img src="photos/thumb7.jpg" alt="Photo 7"></a>
+      <a href="photos/photo8.jpg" target="_blank"><img src="photos/thumb8.jpg" alt="Photo 8"></a>
+      <a href="photos/photo9.jpg" target="_blank"><img src="photos/thumb9.jpg" alt="Photo 9"></a>
+      <a href="photos/photo10.jpg" target="_blank"><img src="photos/thumb10.jpg" alt="Photo 10"></a>
+    </div>
+  </section>
+
+  <section class="contact">
     <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required/>
-      <input type="email" name="email" placeholder="Your Email" required/>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <form action="mailto:your@email.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
-
-  <footer>
-    <p>&copy; 2025. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
