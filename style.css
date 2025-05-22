@@ -12,7 +12,7 @@ body {
 }
 
 .site-header {
-  background-color: #f15837;
+  background-color: #3050bc;
   border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
@@ -125,7 +125,7 @@ section {
 
 .contact button {
   padding: 10px;
-  background-color: #333;
+  background-color: #3050bc;
   color: white;
   border: none;
   border-radius: 5px;
