@@ -1,16 +1,18 @@
-// Optional: Lightbox effect for photo gallery
-window.addEventListener('load', function () {
-  if (window.location.hash) {
-    history.replaceState(null, null, window.location.pathname);
-    window.scrollTo(0, 0);
-  }
-});
+// FIX: Prevent scroll to anchor on refresh
+if (window.location.hash) {
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  history.replaceState(null, null, window.location.pathname);
+  document.documentElement.scrollTop = scrollTop;
+  document.body.scrollTop = scrollTop;
+}
+
+// Optional: Lightbox effect
 document.addEventListener("DOMContentLoaded", () => {
   const galleryLinks = document.querySelectorAll(".gallery-grid a");
 
   galleryLinks.forEach(link => {
     link.addEventListener("click", (e) => {
-      if (!link.href.endsWith('.jpg')) return; // Prevent lightbox for non-images
+      if (!link.href.endsWith('.jpg')) return;
       e.preventDefault();
 
       const overlay = document.createElement("div");
