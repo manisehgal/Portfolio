@@ -63,7 +63,6 @@ body {
   align-items: center;       /* Vertically center text */
   justify-content: center;   /* Horizontally center text */
   text-align: center;
-  padding: 0 20px;
 }
 
 .cover-text {
