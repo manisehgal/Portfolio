@@ -52,23 +52,23 @@ body {
 }
 
 .cover-photo {
-  background-image: url('377CB2C1-41E8-41D1-A3B7-B2945D34F651.jpeg');
-  background-position: center;
-  background-size: cover;
+  background-image: url('cover.jpg');
+  background-position: center center;
   background-repeat: no-repeat;
-  height: 100vh; /* full viewport height */
+  background-size: cover;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: white;
-  position: relative;
+  overflow: hidden;
 }
 
 .cover-text {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 40px;
-  display: inline-block;
+  max-width: 90%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
 }
 
 h1 {
