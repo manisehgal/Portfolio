@@ -1,16 +1,20 @@
-html {
-  scroll-behavior: smooth;
-}
-:root {
-  scroll-padding-top: 80px; /* Adjust to match your header height */
-}
-body {
-  font-family: 'Segoe UI', sans-serif;
+/* Reset and base styles */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   color: #333;
 }
 
+/* Sticky header */
 .site-header {
   background-color: #1a4870;
   border-bottom: 1px solid #ddd;
@@ -34,10 +38,12 @@ body {
 
 .main-nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 20px;
+}
+
+.main-nav li {
+  list-style: none;
 }
 
 .main-nav a {
@@ -51,25 +57,28 @@ body {
   color: #0077cc;
 }
 
+/* Cover photo */
 .cover-photo {
   background-image: url('377CB2C1-41E8-41D1-A3B7-B2945D34F651.jpeg'); /* Update path if needed */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; /* Use 'cover' if you want it to fill screen and crop */
   height: 100vh;
-  margin: 0;
-  padding: 0;
   display: flex;
-  align-items: center;       /* Vertically center text */
-  justify-content: center;   /* Horizontally center text */
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
 .cover-text {
   padding: 30px 20px;
-  border-radius: 8px;
   color: #fff;
   max-width: 90%;
+  background-color: rgba(0, 0, 0, 0.5); /* Remove if you don't want the overlay box */
+  border-radius: 8px;
 }
 
 .cover-text h1 {
@@ -81,7 +90,16 @@ body {
   font-size: 1.2em;
 }
 
-/* Mobile adjustment */
+/* Headings */
+h1 {
+  margin: 0 0 20px;
+}
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+/* Responsive Text */
 @media (max-width: 600px) {
   .cover-text h1 {
     font-size: 1.8em;
@@ -92,28 +110,23 @@ body {
   }
 }
 
-h1 {
-  margin: 0 0 20px;
-}
-h2 {
-  text-align: center;
-  margin: 0 0 20px;
-}
-
+/* Section layout */
 section {
   padding: 40px 20px;
   max-width: 1000px;
   margin: auto;
 }
 
+/* About section */
 .about p {
-  
   max-width: 700px;
-  margin-top:0;
-  margin: auto;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 1.1em;
 }
 
+/* Gallery section */
 .gallery h2 {
   text-align: center;
 }
@@ -135,6 +148,7 @@ section {
   transform: scale(1.05);
 }
 
+/* Contact form */
 .contact form {
   display: flex;
   flex-direction: column;
