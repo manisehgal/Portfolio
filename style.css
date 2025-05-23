@@ -77,7 +77,7 @@ html, body {
   padding: 30px 20px;
   color: #fff;
   max-width: 90%;
-  background-color: rgba(0, 0, 0, 0.5); /* Remove if you don't want the overlay box */
+  /*background-color: rgba(0, 0, 0, 0.5);Remove if you don't want the overlay box */
   border-radius: 8px;
 }
 
