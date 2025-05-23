@@ -52,23 +52,24 @@ body {
 }
 
 .cover-photo {
-  background-image: url('cover.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
 
+.cover-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 .cover-text {
-  max-width: 90%;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
   color: white;
   text-align: center;
+  padding: 40px;
 }
 
 h1 {
