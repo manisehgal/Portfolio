@@ -57,6 +57,8 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   height: 100vh;
+  matgin:0;
+  padding:0;
   display: flex;
   align-items: center;       /* Vertically center text */
   justify-content: center;   /* Horizontally center text */
@@ -108,6 +110,7 @@ section {
 .about p {
   
   max-width: 700px;
+  margin-top:0;
   margin: auto;
   font-size: 1.1em;
 }
