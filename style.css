@@ -55,6 +55,7 @@ body {
   background: url('377CB2C1-41E8-41D1-A3B7-B2945D34F651.jpeg') center/cover no-repeat;
   color: white;
   text-align: center;
+  width: 100%;
   padding: 100px 20px;
   position: relative;
 }
