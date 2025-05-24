@@ -63,7 +63,7 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain; /* Use 'cover' if you want it to fill screen and crop */
-  height: 100vh;
+  min-height: calc(100vh - 70px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,7 +114,7 @@ h2 {
 section {
   padding: 40px 20px;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* About section */
