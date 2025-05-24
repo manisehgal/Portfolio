@@ -73,7 +73,6 @@ body {
   height: auto;
   display: block;
 }
-
 .cover-text {
   position: absolute;
   top: 50%;
@@ -81,18 +80,18 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px 15px;
   max-width: 90%;
 }
 
-/* Headings */
 .cover-text h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  font-size: 2em;
+  margin-bottom: 8px;
+  line-height: 1.2;
 }
 
 .cover-text p {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 h1 {
@@ -107,11 +106,11 @@ h2 {
 /* Responsive Text */
 @media (max-width: 600px) {
   .cover-text h1 {
-    font-size: 1.8em;
+    font-size: 1.4em;
   }
 
   .cover-text p {
-    font-size: 1em;
+    font-size: 0.95em;
   }
 }
 
